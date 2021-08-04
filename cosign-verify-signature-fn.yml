@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  cosign-verify-signature-fn:
+    lang: golang-middleware
+    handler: ./cosign-verify-signature-fn
+    image: devopps/cosign-verify-signature-fn:latest
+
