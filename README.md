@@ -1,13 +1,13 @@
 # cosign-verify-signature-fn
 
 ## Prerequisites
-* cosign v1.0.0
-* faas-cli v0.13.13
-* kind v0.11.1
-* docker v20.10.7
-* arkade v0.7.25
-* buildx v0.5.1-docker
-* httpie v2.4.0
+* _**cosign v1.0.0**_
+* _**faas-cli v0.13.13**_
+* _**kind v0.11.1**_
+* _**docker v20.10.7**_
+* _**arkade v0.7.25**_
+* _**buildx v0.5.1-docker**_
+* _**httpie v2.4.0**_
 
 ## Tutorial
 
@@ -19,7 +19,7 @@ $ kind create cluster
 
 ### Install OpenFaaS
 
-``shell
+```shell
 $ arkade install openfaas
 ```
 
@@ -34,6 +34,7 @@ $ echo -n $PASSWORD | faas-cli login --username admin --password-stdin
 ### Deploy Function
 
 First, you have download the template from the store.
+
 ```shell
 $ faas-cli template store pull golang-middleware
 ```
